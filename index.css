@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.img{
+    text-align: center;
+}
+
+.img-music{
+    width: 17%;
+    padding: 1.4rem;
+}
+
+.img-serie{
+    padding: 1.2rem;
+}
+
+#the100{
+    width: 14%;
+}
+
+#tlou{
+    width: 16.9%;
+}
+
+#dickson{
+    width: 14.02%;
+}
+
+#otnb{
+    width: 17.5%;
+}
+
+.img-game{
+    width:18%;
+    padding: 1.2rem;
+}
+
+#leftbehind{
+    width: 14%;
+}
+
+#tlouII{
+    width: 14%;
+}
+
+#fallguys{
+    width: 18.7%;
+}
+
+#outerwilds{
+    width: 16.6%;
+}
