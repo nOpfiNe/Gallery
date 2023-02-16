@@ -1,6 +1,15 @@
+
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+body{
+    background-color: black;
 }
 
 .img{
@@ -51,4 +60,51 @@
 
 #outerwilds{
     width: 16.6%;
+}
+
+#text-align{
+    text-align: right;
+}
+
+:root {
+    --menu-size: 10em;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: #525574;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
 }
