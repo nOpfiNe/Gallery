@@ -5,81 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meraki</title>
 
-    <link rel="stylesheet" href="index.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </head>
-<body>   
-        
-        <header id="home">
-            <div id="menu" class="menu effect">
-                <nav>
-                    <ul> 
-                        <li><a href="#music">Músicas</a></li>
-                        <li><a href="#serie">Séries</a></li>
-                        <li><a href="#game">Jogos</a></li>  
-                    </ul>
-                </nav>
+<body>
+
+    <!-- Filtro -->
+    <div id="filtro-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <h3 class="main-title">Conheça nossa galeria</h3>
+                </div>
+                <div class="col-md-12" id="filter-btn-box">
+                    <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                    <button class="main-btn filter-btn" id="dev-btn">Músicas</button>
+                    <button class="main-btn filter-btn" id="dsg-btn">Séries</button>
+                    <button class="main-btn filter-btn" id="seo-btn">Jogos</button>
+                </div>
+
+                <div class="music">
+                    <div class="col-md-4 project-box dev">
+                        <img src="./img_music/mitski.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="./img_music/liniker.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="./img_music/khelani.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box dev">
+                        <img src="./img_music/lins.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="serie">
+                    <div class="col-md-4 project-box dsg">
+                        <img src="./img_serie/the100.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="./img_serie/tlou.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="./img_serie/dickison.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box dsg">
+                        <img src="./img_serie/oitnb.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <div class="game">
+                    <div class="col-md-4 project-box seo">
+                        <img src="./img_jogo/leftbehind.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="./img_jogo/tlouII.jpeg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="./img_jogo/fallguys.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-4 project-box seo">
+                        <img src="./img_jogo/lis.jpeg" class="img-fluid" alt="">
+                    </div>
+                </div>
             </div>
-    
-        </header>
-
-    <div id="music">
-        <h1>Músicas</h1>
-
-        <div class="img">
-            <img class="img-music" src="./img_music/mitski.jpeg" alt="">
-            <img class="img-music" src="./img_music/liniker.jpeg" alt="">
-            <img class="img-music" src="./img_music/khelani.jpeg" alt="">
-            <img class="img-music" src="./img_music/lins.jpg" alt="">
         </div>
     </div>
 
-    <div id="serie">
-        <h1>Séries</h1>
-
-        <div class="img">
-            <img class="img-serie" id="the100" src="./img_serie/the100.jpeg" alt="">
-            <img class="img-serie" id="tlou" src="./img_serie/tlou.jpeg" alt="">
-            <img class="img-serie" id="dickson" src="./img_serie/dickison.jpeg" alt="">
-            <img class="img-serie" id="otnb" src="./img_serie/otnb.jpeg" alt="">
-        </div>
-    </div>
-
-    <div id="game">
-        <h1>Jogos</h1>
-
-        <div class="img">
-            <img class="img-game" id="leftbehind" src="./img_jogo/leftbehind.jpeg" alt="">
-            <img class="img-game" id="tlouII" src="./img_jogo/tlouII.jpeg" alt="">
-            <img class="img-game" id="fallguys" src="./img_jogo/fallguys.jpg" alt="">
-            <img class="img-game" id="outerwilds" src="./img_jogo/outerwilds.jpeg" alt="">
-        </div>
-    </div>
-
-    
     <footer>
         <div class="footer1">
-            <a href="#home"> <img class="logo-footer" src="./Imagens/menu/logo.png" alt="Logo"> </a>
-            <nav class="footer-list">
-                <ul>
-                    <li><a href="#music">Músicas</a></li>
-                    <li><a href="#serie">Séries</a></li>
-                    <li><a href="#game">Jogos</a></li>   
-                </ul>
-            </nav>
-
             <div class="sociais">
-               <a href="https://github.com/nOpfiNe/Projeto-Final" target="_blank"> <img href="" class="" src="./Imagens/footer/github.png" alt="Github"></a>
-               <a href="https://github.com/GraZielly002" target="_blank"> <img href="" class="" src="./Imagens/footer/github.png" alt="Github"></a>
+               <a href="https://github.com/nOpfiNe" target="_blank"> <img src="github.png" alt="Github"> Bruna Moura</a>
+               <a href="https://github.com/GraZielly002" target="_blank"> <img src="github.png" alt="Github"> Grazielly Freitas</a>
             </div>
         </div>
 
         <div class="footer2">
-            <i class="fa-regular fa-copyright"></i>
-            <p>Todos os direitos reservados a sua esquipe de desenvolvedoras</p>
+            <a href="https://github.com/nOpfiNe/Gallery" target="_blank"> <img src="direito-autoral.png" alt="direitos autorais"> Todos os direitos reservados a sua esquipe de desenvolvedoras</a>
         </div>
     </footer>
 
-    <script type="index.js"></script>
+    
+    <!-- Scripts do projeto -->
+    <script src="index.js"></script>
 
 </body>
 </html>
