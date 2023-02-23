@@ -1,7 +1,9 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 body{
@@ -22,13 +24,17 @@ button:focus{
 
 /*imagens-tamanho*/
 
+.img-fluid {
+    border: 5px solid rgb(255, 255, 255); 
+    border-radius: 20px;
+}
 
 /* Filtro */
 
 .main-title {
     color: #ffffff;
     margin: 0 0 65px 0;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -78,7 +84,7 @@ button:focus{
     background-color: #8e39f6;
   }
 
-/*footer*/
+/*footer*/ 
 
 .footer1{
     text-align: center;
@@ -90,7 +96,7 @@ button:focus{
     color: #5C6BC0;
     padding: 7px;
     letter-spacing: 0.09em;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .footer2{   
@@ -103,7 +109,7 @@ button:focus{
     color: #5C6BC0;
     padding: 7px;
     letter-spacing: 0.08em;
-    font-size: 14px;
+    font-size: 16px;
 }
 
  @media(max-width: 425px) {
