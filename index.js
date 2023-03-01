@@ -1,3 +1,6 @@
+const gM = document.querySelector(".galeria-modal");
+const iGM = document.querySelector(".galeria-modal img");
+
 // Filtro
 
 $('.filter-btn').on('click', function() {
@@ -20,17 +23,30 @@ $('.filter-btn').on('click', function() {
 
   });
 
-  function eachBoxes(type, boxes) {
+function eachBoxes(type, boxes) {
 
-    if(type == 'all') {
-      $(boxes).fadeIn();
-    } else {
-      $(boxes).each(function() {
-        if(!$(this).hasClass(type)) {
-          $(this).fadeOut('slow');
-        } else {
-          $(this).fadeIn();
-        }
-      });
-    }
+  if(type == 'all') {
+     $(boxes).fadeIn();
+  } else {
+    $(boxes).each(function() {
+      if(!$(this).hasClass(type)) {
+        $(this).fadeOut('slow');
+      } else {
+        $(this).fadeIn();
+      }
+    });
   }
+}
+
+//Small img
+
+function fecharGaleria(){
+    gM.style.visibility = "hidden";
+    iGM.style.transform = "scale(0)";
+}
+
+function abrirGaleria(src){
+    gM.style.visibility = "visible";
+    iGM.style.transform = "scale(1)";
+    iGM.src = src
+}
